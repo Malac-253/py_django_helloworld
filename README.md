@@ -1,1 +1,2 @@
-# py_django_helloworld1
+# py_django_helloworld
+
