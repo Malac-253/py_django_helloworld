@@ -11,3 +11,6 @@
 6/17/2021 - "python manage.py makemigrations" - to update after APP edits or model edits (p1)
 6/17/2021 - "python manage.py migrate" - to update after APP edits or model edits (p2)
 6/17/2021 - run "python manage.py shell" to run py shell in Powershell
+6/17/2021 - https://docs.djangoproject.com/en/3.2/ref/models/fields/
+6/17/2021 - https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#built-in-filter-reference
+6/17/2021 - Leaving off at 2:15:20

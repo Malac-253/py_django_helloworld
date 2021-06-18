@@ -11,7 +11,7 @@
 <p>{{ request.user.is_authenticated }}</p>
 
 <p>my_text</p>
-<p>{{ my_text }}</p>
+<p>{{ my_text|capfirst|lower }}</p>
 
 <p>my_number</p>
 <p>{{ my_number }}</p>
@@ -23,10 +23,19 @@
 
 <ul>
 	{% for my_sub_item in my_list %}
-		{{% if boolTest %}}
-			
-		{{endif}}
-		<li> {{ forloop.counter}} - {{my_sub_item}} </li>
-		}
+		{% if boolTest == True %}
+			<li> {{ forloop.counter}} - {{my_sub_item|add:" LINK "}} </li>
+		{% endif %}
+
+		{% if my_sub_item == 'mal' %}
+			<li> {{ forloop.counter}} - {{my_sub_item|add:" Berr "}} </li>
+		{% endif %}
+		
 	{% endfor %}
-</
+</ul>
+
+{% endblock content_block1 %}
+
+
+
+

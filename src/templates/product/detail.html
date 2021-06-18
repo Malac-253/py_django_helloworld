@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content_block1 %}
+
+<h2>Item</h2>
+<h4>{{obj.title}}</h4>
+<h4>
+	{% if obj.description != None %}
+		{{obj.description}}
+	{% else %}
+		Description is coming soon
+	{% endif %}
+
+
+
+</h4>
+{% endblock content_block1 %}

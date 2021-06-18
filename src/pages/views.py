@@ -18,8 +18,9 @@ def trash_view(request,*args, **kwargs): #*args, **kwargs
 
 def test_view(request,*args, **kwargs): 
 	context = {
+		'boolTest':True,
 		'my_text':"THIS IS THE WAY",
 		'my_number': 123,
-		'my_list':['mal','egd','she','eil']
+		'my_list':['mal','egd','she','eil'],
 	}
 	return render(request,"test.html",context)

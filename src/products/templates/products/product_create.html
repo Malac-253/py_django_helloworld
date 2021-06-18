@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content_block1 %}
+<!--
+if form method GET will change the URL, adding a var
+
+"action=''" can send data to new url
+	ex action='https://www.google.com/search/' and method="GET"
+
+
+	Get date to another page
+	post date to the datebase
+-->
+<form action='.' method="POST"> {% csrf_token %}
+	<!-- {% csrf_token %} {{form.as_p}} -->
+	
+	<input type="text" name="title" placeholder="your title">
+
+	
+	<input type="submit" value="save">
+	
+</form>
+
+
+{% endblock content_block1 %}

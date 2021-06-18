@@ -17,10 +17,8 @@ from django.contrib import admin
 from django.urls import path
 
 #my views
-from pages.views import home_view
-from pages.views import log_view
-from pages.views import trash_view
-from pages.views import test_view
+from pages.views import home_view, log_view, trash_view, test_view
+from products.views import product_detail_view, product_create_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,4 +29,8 @@ urlpatterns = [
     path('test/',test_view, name='Testing Page'),
     path('log/',log_view, name='LOG'),
     path('trash/',trash_view, name='POOPY FACE'),
+
+    path('product/',product_detail_view, name='Details'),
+    path('create/',product_create_view, name='Create'),
+
 ]
