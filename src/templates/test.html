@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content_block1 %}
+
+<h1>Hello World - Testing pages </h1>
+
+<p>request.user</p> 
+<p>{{ request.user }}</p>
+
+<p>request.user.is_authenticated</p> 
+<p>{{ request.user.is_authenticated }}</p>
+
+<p>my_text</p>
+<p>{{ my_text }}</p>
+
+<p>my_number</p>
+<p>{{ my_number }}</p>
+
+<p>my_list</p>
+<p>{{ my_list }}</p>
+
+
+
+<ul>
+	{% for my_sub_item in my_list %}
+		{{% if boolTest %}}
+			
+		{{endif}}
+		<li> {{ forloop.counter}} - {{my_sub_item}} </li>
+		}
+	{% endfor %}
+</

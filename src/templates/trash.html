@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content_block1 %}
+
+<h1>Hello World - Home </h1>
+
+{{ request.user }}
+{{ request.user.is_authenticated }}
+<p>This is a Templates Pages</p>
+
+{% endblock content_block1 %}
+
+
+
+{% block content_block2 %}
+
+<h1>Hello World - Home Block2 </h1>
+
+{{ request.user.is_authenticated }}
+<p>This is a Templates Pages of block 2</p>
+
+
+	{% block content_block3 %}
+
+	<h1>Hello World - Home Block3 again inside block 2</h1>
+
+	{{ request.user }}
+	<p>This is a Templates Pages of block 3</p>
+
+	{% endblock content_block3 %}
+
+{% endblock content_block2 %}
